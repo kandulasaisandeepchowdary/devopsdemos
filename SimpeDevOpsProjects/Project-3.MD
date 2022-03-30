@@ -81,7 +81,7 @@ C) send files or execute commands over SSH
 
 D) send files or execute commands over SSH  
   Name: `docker_host`  
-  Exec command	: `docker run -d --name valaxy_demo -p 8090:8080 valaxy_demo`  
+  Exec command	: `docker run -d --name tom -p 8090:8080 sai`  
 
 7. Login to Docker host and check images and containers. (no images and containers)
 
