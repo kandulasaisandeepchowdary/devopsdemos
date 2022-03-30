@@ -58,7 +58,7 @@ PasswordAuthentication yes and the restart sudo service sshd restart and then te
 6. Create Jenkins job 
 
 A) Source Code Management  
- Repository : https://github.com/ValaxyTech/hello-world.git  
+ Repository : https://github.com/kandulasaisandeepchowdary/maven-tomcat-project.git  
  Branches to build : */master  
 
 B) Build
