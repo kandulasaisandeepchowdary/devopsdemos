@@ -79,7 +79,6 @@ C) send files or execute commands over SSH
   docker build -t valaxy_demo .
   ```
   
-  Then goto /etc/ssh and open sshd_config and change PasswordAuthentication yes
 
   Then give dockeradmin permissions for /opt/docker (chown -R dockeradmin:dockeradmin /opt/docker)
   
