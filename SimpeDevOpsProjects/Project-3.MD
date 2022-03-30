@@ -33,7 +33,7 @@ COPY ./webapp.war /usr/local/tomcat/webapps
 ```
 
 5. Login to Jenkins console and add Docker server to execute commands from Jenkins  
-Manage Jenkins --> Configure system -->  Publish over SSH --> add Docker server and credentials
+Manage Jenkins --> Configure system -->  Publish over SSH --> Then add Docker server and credentials (that you have created dockeradmin user before)
 
 6. Create Jenkins job 
 
@@ -58,6 +58,11 @@ C) send files or execute commands over SSH
   cd /opt/docker;
   docker build -t valaxy_demo .
   ```
+  
+  Then goto /etc/ssh and open sshd_config and change PasswordAuthentication yes
+
+  Then give dockeradmin permissions for /opt/docker (chown -R dockeradmin:dockeradmin /opt/docker)
+  
 
 D) send files or execute commands over SSH  
   Name: `docker_host`  
