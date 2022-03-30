@@ -4,6 +4,21 @@
 1. Launch an EC2 instance for Docker host
 
 2. Install docker on EC2 instance and start services 
+ 
+   
+--------------Docker installation in rhel/centos-------------------
+•	$ sudo yum install docker
+•	First remove older version of docker (if any):
+$ sudo yum remove docker docker-common docker-selinux docker-engine-selinux docker-engine docker-ce
+•	Next install needed packages:
+$ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+•	Configure the docker-ce repo:
+$ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+•	Finally install docker-ce:
+$ sudo yum install docker-ce
+•	How to enable docker service
+$ sudo systemctl enable docker.service
+
   ```sh 
   yum install docker
   service docker start
