@@ -80,6 +80,8 @@ In *Part-02* we create *create_docker_container.yml* playbook. this get intiated
         - name: remove docker images
           shell: docker image rm -f valaxy/valaxy_demo
           
+	  Then swith to ansible user and generate ssh key and copy that ssh  key to ansible client 
+	  
         - name: create docker image
           shell: docker run -d --name valaxy_demo -p 8090:8080 valaxy/valaxy_demo
 
