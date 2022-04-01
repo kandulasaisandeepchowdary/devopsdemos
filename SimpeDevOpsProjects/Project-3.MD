@@ -30,7 +30,7 @@ useradd dockeradmin
 passwd dockeradmin
 usermod -aG docker dockeradmin
 ```
-
+Then add dockeradmin(user) to docker(group)
 4. Write a Docker file under /opt/docker
 
 ```sh
